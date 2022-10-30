@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Landing Templete</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500&family=Alegreya:wght@400;500&family=Nunito+Sans:wght@300;400;600&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container w-75">
+        <div class="app p-4 mt-4">
+            <div class="app-form form-group">
+                <h1 id="demo">product</h1>
+            
+                <label for="productName" class="mt-4">product Name</label>
+                <input type="text" name="" class="form-control" id="productName" required>
+        
+                <label for="productPrice" class="mt-4">product price</label>
+                <input type="text" name="" class="form-control" id="productPrice" required>
+        
+                <label for="productCateg" class="mt-4">product categoery</label>
+                <input type="text" name="" class="form-control" id="productCateg" required>
+        
+                <label for="productDesc" class="mt-4">product descripion</label>
+                <input type="text" name="" class="form-control" id="productDesc" required>
+        
+                <label for="productDesc" class="mt-4">product Count</label>
+                <input type="text" name="" class="form-control" id="productCount" required>
+        
+                <button onclick="addProduct()" class="btn btn-info mx-4 p-2 mt-5 mb-5">add products</button>
+                <button onclick="DeleteAll()" class="btn btn-danger mx-4 p-2 mt-5 mb-5 ">Delete All products</button>
+                <button onclick="displayLocalStorage()" class="btn btn-primary mx-4 p-2 mt-5 mb-5 ">Display storage</button>
+                <button onclick="hideStorage()" class="btn btn-danger mx-4 p-2 mt-5 mb-5 ">Hide storage</button>
+        
+                <input type="text" name="" id="" onkeyup="searchProducts(this.value)" class="form-control m-auto w-50 mt-5" placeholder="Search...">
+            </div>
+            <div class="app-table mt-5">
+                <table class="table table-bordered text-center mt-4 " >
+                    <thead>
+                        <th id ="id">id</th>
+                        <th>product Name</th>
+                        <th>product price</th>
+                        <th>product categoery</th>
+                        <th>product descripion</th> 
+                        <th>edit</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody id="t-body">
+                        
+                    </tbody>
+                    <tfoot id="t-foot">
+                        
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <a href="callto:+201014052604">01014052604</a>
+    <button onclick="hello()" class="btn btn-info" >click</button> -->
+    <!-- ** -->
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

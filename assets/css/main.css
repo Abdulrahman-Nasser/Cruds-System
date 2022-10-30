@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    color: white;
+    
+}
+.app{
+    border: 2px solid rebeccapurple;
+    box-shadow: 0 0 20px rebeccapurple; 
+    text-transform: capitalize;
+}
+.app table{
+    color: white;
+    text-transform: capitalize;
+}
+.app tbody{
+    background-color: black;
+}
+.btn{
+    text-transform: capitalize;
+}
